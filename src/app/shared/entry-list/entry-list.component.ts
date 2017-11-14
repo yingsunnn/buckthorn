@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Entry } from '../models';
 
 @Component({
   selector: 'app-entry-list',
@@ -7,7 +8,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class EntryListComponent implements OnInit {
-
+  @Input() entries: Array<Entry>;
   constructor() { }
 
   ngOnInit() {
