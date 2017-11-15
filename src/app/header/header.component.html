@@ -2,9 +2,9 @@
   <div class="item">
     <img src="/assets/images/logo.png">
   </div>
-      <a class="ui item" routerLink="/home">Home</a>
+  <a class="ui item" routerLink="/home">Home</a>
   <a class="ui item">
-      Notifications
+    Notifications
   </a>
   <div class="right menu">
     <div class="item">
@@ -13,10 +13,24 @@
         <i class="search link icon"></i>
       </div>
     </div>
-    <a class="ui item">Sign In
-       </a>
+    <a class="ui item" (click)="toggleSignIn()">
+      Sign In
+    </a>
+    <a class="ui item" (click)="toggleSignIn()">
+      Sign Up
+    </a>
     <a class="ui item">
       Add Entry
     </a>
   </div>
+</div>
+
+<div class="ui modal mini sign-in">
+  <i class="close icon"></i>
+
+  <div class="header">
+    Sign In
+  </div>
+
+  <app-sign-in></app-sign-in>
 </div>

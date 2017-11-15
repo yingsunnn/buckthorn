@@ -1,26 +1,16 @@
-<div class="ui modal sign-in">
-  <i class="close icon"></i>
-  <div class="header">
-    Profile Picture
-  </div>
-  <div class="image content">
-    <div class="ui medium image">
-      <img src="/images/avatar/large/chris.jpg">
+<div class="text container sign-in-form">
+  <form class="ui form">
+    <div class="field">
+      <label>Email</label>
+      <input [(ngModel)]="user.email" type="text" placeholder="Email" name="ip-user-email">
     </div>
-    <div class="description">
-      <div class="ui header">We've auto-chosen a profile image for you.</div>
-      <p>We've grabbed the following image from the
-        <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
-      <p>Is it okay to use this photo?</p>
+    <div class="field">
+      <label>Password</label>
+      <input [(ngModel)]="user.password" type="password" placeholder="Password" name="ip-user-password">
     </div>
-  </div>
-  <div class="actions">
-    <div class="ui black deny button">
-      Nope
+    <div class="field">
+      <a>Forgot passowrd?</a>
     </div>
-    <div class="ui positive right labeled icon button">
-      Yep, that's me
-      <i class="checkmark icon"></i>
-    </div>
-  </div>
+    <button class="ui button sign-in" type="submit" (click)="signIn()">Sign in</button>
+  </form>
 </div>
