@@ -8,6 +8,7 @@ import { SignInComponent } from './user/sign-in/sign-in.component';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { MessageComponent } from './shared';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SignInComponent
+    SignInComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
