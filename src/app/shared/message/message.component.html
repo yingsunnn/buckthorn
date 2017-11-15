@@ -1,0 +1,7 @@
+<div *ngIf="message.content" class="ui {{ message.type }} message">
+  <i *ngIf="message.isCloseable" class="close icon"></i>
+  <div *ngIf="message.title" class="header">
+    {{ message.title }}
+  </div>
+  <p>{{ message.content }}</p>
+</div>
