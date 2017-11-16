@@ -17,7 +17,10 @@ export class HeaderComponent implements OnInit {
 
   constructor(private userSignInInfoService: UserSignInInfoService) {
     this.subscription = this.userSignInInfoService
-      .getUserInfo().subscribe(userSignedIn => this.userSignedIn = userSignedIn);
+      .getUserInfo()
+      .subscribe(
+      userSignedIn => this.userSignedIn = userSignedIn,
+      error => console.log('Error:' + error));
   }
 
   ngOnInit() {
@@ -31,7 +34,10 @@ export class HeaderComponent implements OnInit {
 
   updateUserSignedIn() {
     this.userSignInInfoService
-      .getUserInfo().subscribe(userSignedIn => this.userSignedIn = userSignedIn);
+      .getUserInfo()
+      .subscribe(
+      userSignedIn => this.userSignedIn = userSignedIn,
+      error => console.log('Error:' + error));
   }
 
   ngOnDestroy() {
