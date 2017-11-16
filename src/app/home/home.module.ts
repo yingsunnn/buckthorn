@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { HotEntriesComponent } from './hot-entries/hot-entries.component';
-import { EntryCardComponent, EntryListComponent, MessageComponent } from '../shared';
+import { EntryCardComponent, EntryListComponent } from '../shared';
 
 @NgModule({
   imports: [
@@ -15,8 +15,7 @@ import { EntryCardComponent, EntryListComponent, MessageComponent } from '../sha
     HomeComponent, 
     HotEntriesComponent,
     EntryCardComponent,
-    EntryListComponent,
-    MessageComponent
+    EntryListComponent
   ]
 })
 export class HomeModule { }

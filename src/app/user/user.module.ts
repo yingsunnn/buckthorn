@@ -1,18 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { UserRoutingModule } from './user-routing.module';
 import { SignInComponent } from './sign-in/sign-in.component';
-import { MessageComponent } from '../shared';
+import { MessageComponent, UserSignInInfoService } from '../shared';
+
 
 @NgModule({
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    HttpClientModule
   ],
   declarations: [
     SignInComponent, 
     MessageComponent
+  ],
+  providers: [
+    UserSignInInfoService
   ]
 })
 export class UserModule { }
