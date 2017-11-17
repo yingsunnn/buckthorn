@@ -1,0 +1,18 @@
+<div class="text container sign-up-form">
+    <app-message [message]="message"></app-message>
+    <br/>
+    <form class="ui form">
+      <div class="field">
+        <label>Email</label>
+        <input [(ngModel)]="user.email" type="text" placeholder="Email" name="ip-user-email">
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input [(ngModel)]="user.password" type="password" placeholder="Password" name="ip-user-password">
+      </div>
+      <div class="field">
+        <a>Forgot passowrd?</a>
+      </div>
+      <button class="ui button sign-in" type="submit" (click)="signIn()">Sign in</button>
+    </form>
+  </div>

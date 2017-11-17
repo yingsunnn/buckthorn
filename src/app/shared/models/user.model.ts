@@ -1,3 +1,5 @@
+import { UserAuthFirstParties} from './user-auth-first-parties.model';
+
 export class User {
     id: string;
     username: string;
@@ -8,4 +10,6 @@ export class User {
     status: string;
     create_time: string;
     update_time: string;
+
+    user_auth_first_parties: UserAuthFirstParties = new UserAuthFirstParties();
 }

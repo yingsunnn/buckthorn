@@ -2,9 +2,9 @@
   <div class="item">
     <img src="/assets/images/logo.png">
   </div>
-  <a class="ui item" routerLink="/home">Home</a>
+  <a class="ui item" routerLink="/home">首 页</a>
   <a class="ui item">
-    Notifications
+    通 知
   </a>
   <div class="right menu">
     <div class="item">
@@ -13,18 +13,27 @@
         <i class="search link icon"></i>
       </div>
     </div>
-    <a *ngIf="!userSignedIn.id;" class="ui item" (click)="toggleSignIn()">
-      Sign In
+    <a *ngIf="!userSignedIn.id;" class="ui right item" (click)="toggleSignIn()">
+      登 录
     </a>
-    <a *ngIf="!userSignedIn.id;" class="ui item">
-      Sign Up
+    <a *ngIf="!userSignedIn.id;" class="ui right item">
+      注 册
     </a>
-    <a *ngIf="userSignedIn.id;" class="ui item">
-      {{ userSignedIn.username }}
-    </a>
+    <div *ngIf="userSignedIn.id;" class="ui simple dropdown item">
+       {{ userSignedIn.username }}
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <div class="item">我的主页</div>
+        <div class="item">我的词条</div>
+        <div class="item">生词本</div>
+        <div class="item">
+          <a (click)="signOut()">登出</a>
+        </div>
+      </div>
+    </div>
 
-    <a class="ui item">
-      Add Entry
+    <a class="ui right item">
+      添加词条
     </a>
   </div>
 </div>
