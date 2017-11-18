@@ -16,18 +16,18 @@
     <a *ngIf="!userSignedIn.id;" class="ui right item" (click)="toggleSignIn()">
       登 录
     </a>
-    <a *ngIf="!userSignedIn.id;" class="ui right item">
+    <a *ngIf="!userSignedIn.id;" class="ui right item" (click)="toggleSignUp();">
       注 册
     </a>
     <div *ngIf="userSignedIn.id;" class="ui simple dropdown item">
-       {{ userSignedIn.username }}
+      {{ userSignedIn.username }}
       <i class="dropdown icon"></i>
       <div class="menu">
         <div class="item">我的主页</div>
         <div class="item">我的词条</div>
         <div class="item">生词本</div>
         <div class="item">
-          <a (click)="signOut()">登出</a>
+          <a (click)="signOut();" style="color:black">登出</a>
         </div>
       </div>
     </div>
@@ -42,8 +42,18 @@
   <i class="close icon"></i>
 
   <div class="header">
-    Sign In
+    登 录
   </div>
 
   <app-sign-in></app-sign-in>
+</div>
+
+<div class="ui modal mini sign-up">
+  <i class="close icon"></i>
+
+  <div class="header">
+    注 册
+  </div>
+
+  <app-sign-up></app-sign-up>
 </div>

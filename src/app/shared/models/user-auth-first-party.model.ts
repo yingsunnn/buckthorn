@@ -1,4 +1,4 @@
-export class UserAuthFirstParties {
+export class UserAuthFirstParty {
     secure_password: string;
     user_identity: string;
     auth_name: string = USER_AUTH_NAME.EMAIL;

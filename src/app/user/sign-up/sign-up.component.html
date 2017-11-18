@@ -3,16 +3,21 @@
     <br/>
     <form class="ui form">
       <div class="field">
-        <label>Email</label>
-        <input [(ngModel)]="user.email" type="text" placeholder="Email" name="ip-user-email">
+        <label>电子邮箱地址</label>
+        <input [(ngModel)]="user.email" type="text" placeholder="电子邮箱地址" name="ip-user-email">
       </div>
       <div class="field">
-        <label>Password</label>
-        <input [(ngModel)]="user.password" type="password" placeholder="Password" name="ip-user-password">
+        <label>用户名</label>
+        <input [(ngModel)]="user.username" type="text" placeholder="用户名" name="ip-user-username">
       </div>
       <div class="field">
-        <a>Forgot passowrd?</a>
+        <label>密码</label>
+        <input [(ngModel)]="user.password" type="password" placeholder="密码" name="ip-user-password">
       </div>
-      <button class="ui button sign-in" type="submit" (click)="signIn()">Sign in</button>
+      <div class="field">
+        <label>再次输入密码</label>
+        <input [(ngModel)]="user.password_sec" type="password" placeholder="再次输入密码" name="ip-user-password-sec">
+      </div>
+      <button class="ui button" type="submit" (click)="signUp()">注 册</button>
     </form>
   </div>

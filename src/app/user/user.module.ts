@@ -16,7 +16,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
   ],
   declarations: [
     SignInComponent, 
-    MessageComponent, SignUpComponent
+    MessageComponent, 
+    SignUpComponent
   ],
   providers: [
     UserSignInInfoService

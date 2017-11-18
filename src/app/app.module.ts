@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { SignInComponent } from './user/sign-in/sign-in.component';
+import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -18,6 +19,7 @@ import { MessageComponent, UserSignInInfoService } from './shared';
     HeaderComponent,
     FooterComponent,
     SignInComponent,
+    SignUpComponent,
     MessageComponent
   ],
   imports: [
