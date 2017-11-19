@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <a class="ui right item">
+    <a class="ui right item" (click)="toggleAddEntry();">
       添加词条
     </a>
   </div>
@@ -56,4 +56,14 @@
   </div>
 
   <app-sign-up></app-sign-up>
+</div>
+
+<div class="ui modal add-entry">
+  <i class="close icon"></i>
+
+  <div class="header">
+    添加词条
+  </div>
+
+  <app-add-entry></app-add-entry>
 </div>

@@ -36,6 +36,10 @@ export class HeaderComponent implements OnInit {
     $('.ui.modal.sign-up').modal('show');
   }
 
+  toggleAddEntry () {
+    $('.ui.modal.add-entry').modal('show');
+  }
+
   signOut() {
     this.userSignInInfoService.clearUserInfo();
   }

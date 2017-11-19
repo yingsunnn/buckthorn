@@ -1,0 +1,19 @@
+<div class="text container add-entry-form">
+  <app-message [message]="message"></app-message>
+  <br/>
+  <form class="ui form">
+    <div class="field">
+      <label>词条名称</label>
+      <input [(ngModel)]="entry.name" type="text" placeholder="Entry name" name="ip-entry-name">
+    </div>
+    <div class="field">
+      <label>词条解释</label>
+      <textarea rows="2" [(ngModel)]="entry.definition" type="password" placeholder="Definition" name="ip-user-definition"></textarea>
+    </div>
+    <div class="field">
+      <label>例句</label>
+      <textarea rows="2" [(ngModel)]="entry.example" type="password" placeholder="example" name="ip-user-example"></textarea>
+    </div>
+    <button class="ui button sign-in" type="submit" (click)="addEntry()">提 交</button>
+  </form>
+</div>

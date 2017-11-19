@@ -10,7 +10,7 @@ import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { MessageComponent, UserSignInInfoService } from './shared';
+import { MessageComponent, UserSignInInfoService, AddEntryComponent} from './shared';
 
 
 @NgModule({
@@ -20,7 +20,8 @@ import { MessageComponent, UserSignInInfoService } from './shared';
     FooterComponent,
     SignInComponent,
     SignUpComponent,
-    MessageComponent
+    MessageComponent,
+    AddEntryComponent
   ],
   imports: [
     BrowserModule,
