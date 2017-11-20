@@ -2,7 +2,7 @@ export class Message {
     content: string;
     title: string;
     type: string = MESSAGE_TYPE.NORMAL;
-    isCloseable: boolean = true;
+    isCloseable: boolean = false;
 }
 
 export const MESSAGE_TYPE = {
