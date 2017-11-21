@@ -1,6 +1,6 @@
-
-
-<div *ngFor="let entry of entries; let i = index">
-  <app-entry-card [entry]="entry"></app-entry-card>
-  <br/>
+<div class="ui list">
+  <div *ngFor="let entry of entries; let i = index">
+    <app-entry-item [entry]="entry"></app-entry-item>
+    <br/>
+  </div>
 </div>

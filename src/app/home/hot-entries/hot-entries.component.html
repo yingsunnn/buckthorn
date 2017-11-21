@@ -1,2 +1,5 @@
-<app-message [message]="message"></app-message>
+<div *ngIf="message.content">
+    <app-message [message]="message"></app-message>
+</div>
+
 <app-entry-list [entries]="entries"></app-entry-list>
