@@ -1,2 +1,36 @@
+<div class="ui grid">
+    <div class="two wide column"></div>
 
-<router-outlet></router-outlet>
+    <div class="two wide column">
+        <br/>
+        <br/>
+        <div class="ui segments">
+            <div class="ui teal segment">
+                <a class="item" routerLink="/home/hot-entries">热门词条</a>
+            </div>
+            <div class="ui teal segment">
+                <a class="item" routerLink="/home/random-entries">随机词条</a>
+            </div>
+            <div class="ui teal segment">
+                <a class="item">最新词条</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="seven wide column">
+        <router-outlet></router-outlet>
+    </div>
+
+    <div class="three wide column">
+        <br/>
+        <div class="ui piled segment">
+            <h4 class="ui header">热门标签</h4>
+            <a class="ui teal tiny basic label">tag 1</a>
+            <a class="ui teal tiny basic label">tag2</a>
+            <a class="ui teal tiny basic label">tag3</a>
+            <a class="ui teal tiny basic label">Featured</a>
+        </div>
+    </div>
+
+    <div class="two wide column"></div>
+</div>

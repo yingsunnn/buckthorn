@@ -1,5 +1,5 @@
-<div class="ui list">
-  <div *ngFor="let entry of entries; let i = index">
+<div class="ui relaxed divided list">
+  <div class="item" *ngFor="let entry of entries; let i = index">
     <app-entry-item [entry]="entry"></app-entry-item>
     <br/>
   </div>

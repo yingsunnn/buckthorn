@@ -1,14 +1,11 @@
-<div class="item">
-  <div class="content">
-    <a class="header">{{entry.name}}</a>
-    <div class="description">
-      {{entry.definition}}
-      <br/> 
-      {{entry.example}}
-      <br/>
-      <div *ngFor="let tag of entry.tags; let i = index">
-        {{tag.name}}
-      </div>
+<div class="content">
+  <a class="header">{{entry.name}}</a>
+  <div class="description">
+    {{entry.definition}}
+    <br/> {{entry.example}}
+    <br/>
+    <div *ngFor="let tag of entry.tags; let i = index">
+      {{tag.name}}
     </div>
   </div>
 </div>

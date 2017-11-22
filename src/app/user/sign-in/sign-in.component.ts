@@ -33,14 +33,12 @@ export class SignInComponent implements OnInit {
       .subscribe(
       response => {
         this.message.content = "Sign in successfully";
-        this.message.isCloseable = false;
         this.message.type = MESSAGE_TYPE.SUCCESS;
 
         this.userSignInInfoService.updateUserInfo(response);
       },
       (err: HttpErrorResponse) => {
         this.message.content = err.error.error_message;
-        this.message.isCloseable = false;
         this.message.title = "Sign in failed";
         this.message.type = MESSAGE_TYPE.ERROR;
         

@@ -13,7 +13,6 @@ export class EntryItemComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }
