@@ -10,8 +10,8 @@ import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { MessageComponent, UserSignInInfoService, AddEntryComponent } from './shared';
-
+import { UserSignInInfoService } from './shared';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -19,15 +19,14 @@ import { MessageComponent, UserSignInInfoService, AddEntryComponent } from './sh
     HeaderComponent,
     FooterComponent,
     SignInComponent,
-    SignUpComponent,
-    MessageComponent,
-    AddEntryComponent
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [UserSignInInfoService],
   bootstrap: [AppComponent]
